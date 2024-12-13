@@ -16,8 +16,8 @@ export function Places( { data }: Props )  {
     const bottomSheetRef = useRef<BottomSheet>(null);
 
     const snapPoints = {
-        min: 278,
-        max: dimensions.height - 278
+        min: 248,
+        max: dimensions.height - 248
     }
     
     return (
