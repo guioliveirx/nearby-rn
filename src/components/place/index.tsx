@@ -24,7 +24,8 @@ export function Place({ data, ...rest }: Props )  {
 
             <View style={s.content}>
                 <Text style={s.name}>{data.name}</Text>
-                <Text style={s.description}>{data.description}</Text>
+                {/* numberOfLines limita a quantidade de linhas que uma parágrafo pode ter */}
+                <Text style={s.description} numberOfLines={2}>{data.description}</Text>
 
                 <View style={s.footer}>
                     <IconTicket size={16} color={colors.red.base} />
